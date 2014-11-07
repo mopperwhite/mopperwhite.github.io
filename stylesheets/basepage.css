@@ -27,6 +27,14 @@ body{
 */
         background-color: #000000;   
 }
+
+a:link {color: #FFFF95;text-decoration:none;}
+a:visited {color: #FFFF95;text-decoration:none;}
+a:hover {color: #FFFFBF;text-decoration:none;}
+a:active {color: #E4FF95;text-decoration:none;}
+
+
+
 div.content-background{
         position: static;
         width: 100%;
@@ -64,12 +72,14 @@ div.content-out{
         width: 90%;
 }
 div.content-in{
+        top: 5px;
         width: 90%;
 }
 
-div#header h1#blog-title{
+div#header .blog-title{
         font-family: Sans-serif;
         color: #FFFFFF;
+        text-decoration:none;
         top: 10px;
         bottom: 0;
         left: 30px;
@@ -77,10 +87,5 @@ div#header h1#blog-title{
         height: 100%;
         font-size: 100px;
 }
-
-a:link {color: #FFFF95;text-decoration:none;}
-a:visited {color: #FFFF95;text-decoration:none;}
-a:hover {color: #FFFFBF;text-decoration:none;}
-a:active {color: #E4FF95;text-decoration:none;}
 
 

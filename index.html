@@ -1,6 +1,8 @@
 ---
 layout: basepage
 title: MopperWhite
+include: 
+        -post_item.html
 ---
 <h4>文章列表</h4>
 <ul>
@@ -8,7 +10,7 @@ title: MopperWhite
                 <li>
                         <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
+                {{% include post_item.html page=post %}}
         {% endfor %}
 </ul>
 <p>===================================================</p>
-{{ include post_item.html }}

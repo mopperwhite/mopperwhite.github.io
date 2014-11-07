@@ -1,20 +1,20 @@
-{% for page in site.posts %}
-        <div class="post-item">
-                <a href="{{ page.url }}"><p class="post-item-title">{{ page.title }}</p></a>
-                <p>
-                        <div class="post-item-date">
-                                {{ page.date }}
-                        </div>
-                        <div class="post-item-tags">
-                        |
-                        {% for tag in page.tags %}
-                        <a href="">{{ tag }}</a>
-                        |
-                        {% endfor %}
-                        </div>
-                </p>
-                <p>
-                {{ page.excerpt }}
-                </p>
-        </div>
-{% endfor %}
+---
+---
+<div class="post-item">
+        <a href="{{ page.url }}"><p class="post-item-title">{{ include.page.title }}</p></a>
+        <p>
+                <div class="post-item-date">
+                        {{ include.page.date }}
+                </div>
+                <div class="post-item-tags">
+                |
+                {% for tag in include.page.tags %}
+                <a href="">{{ tag }}</a>
+                |
+                {% endfor %}
+                </div>
+        </p>
+        <p>
+        {{ include.page.excerpt }}
+        </p>
+</div>

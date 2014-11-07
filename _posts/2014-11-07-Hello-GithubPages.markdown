@@ -1,6 +1,6 @@
 ---
 layout: basepage
-title: "Hello，Github Pages"
+title: "你好，Github Pages"
 tags: 
         - Hello World
 ---
