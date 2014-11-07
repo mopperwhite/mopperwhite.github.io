@@ -1,0 +1,10 @@
+div.post-item{
+        border-radius: 15px;
+        background-color: #DCDCDC;
+        width: 90%;
+}
+p.post-item-title{
+        font-weight: bold;
+        font-size: 30px;
+        color: #333333;
+}

@@ -1,0 +1,10 @@
+body{
+        background-color: 1E1E1E;
+}
+.tag-button{
+        border-radius: 15px;
+        font-colour: 1E1E1E;
+        /*box-shadow: 10px 10px 25px #ccc;*/
+        background: #0B85FF;
+        text-shadow: none;
+} 

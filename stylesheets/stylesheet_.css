@@ -4,6 +4,7 @@ by Jason Costello, @jsncostello
 *******************************************************************************/
 
 @import url(pygment_trac.css);
+@import url(mwblog.css);
 
 /*******************************************************************************
 MeyerWeb Reset
@@ -295,6 +296,7 @@ Full-Width Styles
 
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
+  max-height: 100px;
 }
 
 #project_title {
