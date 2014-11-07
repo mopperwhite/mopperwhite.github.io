@@ -32,8 +32,9 @@ a:link {color: #FFFF95;text-decoration:none;}
 a:visited {color: #FFFF95;text-decoration:none;}
 a:hover {color: #FFFFBF;text-decoration:none;}
 a:active {color: #E4FF95;text-decoration:none;}
-
-
+p{font-size:15px}
+h1{font-size:30px}
+h1{font-size:30px}
 
 div.content-background{
         position: static;
@@ -71,11 +72,11 @@ div.content{
 div.content-out{
         width: 90%;
 }
-div.content-in{
-        top: 5px;
-        width: 90%;
+div.in-frame{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
 }
-
 div#header .blog-title{
         font-family: Sans-serif;
         color: #FFFFFF;

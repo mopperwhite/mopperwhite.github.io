@@ -1,10 +1,22 @@
+
 div.post-item{
         border-radius: 15px;
         background-color: #DCDCDC;
-        width: 90%;
+        color: #1E1E1E;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
 }
 p.post-item-title{
         font-weight: bold;
         font-size: 30px;
         color: #333333;
+}
+div.post-item-date{
+        
+}
+div.post-item-details{
+        background-color: #1E1E1E;
+        border-radius: 3px;
+        color: #FFFFFF;
 }
