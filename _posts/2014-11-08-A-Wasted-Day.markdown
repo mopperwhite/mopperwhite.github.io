@@ -1,6 +1,6 @@
 ---
 title: Flag不可立
-layout: basepage.html
+layout: basepage
 tags: 
    - 日常
    - Flag 
