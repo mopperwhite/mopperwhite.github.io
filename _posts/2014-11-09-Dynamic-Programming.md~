@@ -32,34 +32,33 @@ f(i,j,k) 的值存在 a\[i\]\[j\]\[k\]里
 
 最大上升子序列长度
 
-```C++ 
-	#include <iostream>
-	using namespace std;
-	int num[100]={0};
-	int aMaxLen[100]={0};
-	int n;
-
-	int main(){
-		cin >> n;
-		for(int i=0;i<n;i++)
-		        cin >> num[i];
-		aMaxLen[0]=1;
-		for(int i=1;i<n;i++){// 找出 1..i 中以 num[i] 结尾的最大子序列长度  因为每个最大子序列必是以某个 num[i] 结尾的，所以只要最后找出 aMaxLen 中最大的即可 
-		        int nTmp=0; 
-		        aMaxLen[i]=1; // 这个 num[i] 在以它结尾的最大子序列中占长度1 
-		        for(int j=0;j<i;j++) // 在 num[0] 到 num[i] 之间有 i 个数  
-		                if(num[i]>num[j]) // 对每个 num[j] ，num[j] 所代表的子序列一定是升的 ， 而当  num[j] < num[i] 时， num[i] 接在 num[j]子序列后， 这个子序列还是升的 
-		                        if(nTmp<aMaxLen[j]) // 很好 ， 如果上一行得到的上升子序列 比现在手头的还要长
-		                                nTmp=aMaxLen[j]; //那么就把手头的换成当前上升子序列    这部分很容易理解
-		        aMaxLen[i]=nTmp+1;  // 把 以 num[i] 结尾的最大上升子序列长度记下来  以备使用 
-		}
-		int nMax=-1;
-		for(int i=0;i<n;i++)
-		        if(nMax<aMaxLen[i]) nMax=aMaxLen[i]; // 找出最长的子序列
-		cout << nMax;
-		return 0;
-	}
-```
+{% highlight Cpp %}
+    #include <iostream>
+    using namespace std;
+    int num[100]={0};
+    int aMaxLen[100]={0};
+    int n;
+    int main(){
+        cin >> n;
+        for(int i=0;i<n;i++)
+            cin >> num[i];
+        aMaxLen[0]=1;
+        for(int i=1;i<n;i++){// 找出 1..i 中以 num[i] 结尾的最大子序列长度  因为每个最大子序列必是以某个 num[i] 结尾的，所以只要最后找出 aMaxLen 中最大的即可 
+            int nTmp=0; 
+            aMaxLen[i]=1; // 这个 num[i] 在以它结尾的最大子序列中占长度1 
+            for(int j=0;j<i;j++) // 在 num[0] 到 num[i] 之间有 i 个数 
+                    if(num[i]>num[j]) // 对每个 num[j] ，num[j] 所代表的子序列一定是升的 ， 而当  num[j] < num[i] 时， num[i] 接在 num[j]子序列后， 这个子序列还是升的 
+                            if(nTmp<aMaxLen[j]) // 很好 ， 如果上一行得到的上升子序列 比现在手头的还要长
+                                    nTmp=aMaxLen[j]; //那么就把手头的换成当前上升子序列    这部分很容易理解
+            aMaxLen[i]=nTmp+1;  // 把 以 num[i] 结尾的最大上升子序列长度记下来  以备使用 
+        }
+        int nMax=-1;
+        for(int i=0;i<n;i++)
+            if(nMax<aMaxLen[i]) nMax=aMaxLen[i]; // 找出最长的子序列
+        cout << nMax;
+        return 0;
+    }
+{% endhighlight %}
 
 
 
@@ -76,23 +75,23 @@ longlong都不够用
 
 然后喜闻乐见地超时了
 ```C++
-	#include <iostream>
-	using namespace std;
-	int main(){
-		long n,a,b,t,m,c;
-		cin>>c;
-		for(int j=0;j<c;j++){
-		        a=0;b=1;
-		        cin >> n>>m;
-		        for(long i=0;i<n-1;i++){
-		                t=(a+b)%m;
-		                a=b;
-		                b=t;
-		        }
-		        cout<<t%m<<"\n";
-		}
-		return 0;
-	}
+    #include <iostream>
+    using namespace std;
+    int main(){
+        long n,a,b,t,m,c;
+        cin>>c;
+        for(int j=0;j<c;j++){
+                a=0;b=1;
+                cin >> n>>m;
+                for(long i=0;i<n-1;i++){
+                        t=(a+b)%m;
+                        a=b;
+                        b=t;
+                }
+                cout<<t%m<<"\n";
+        }
+        return 0;
+    }
 ```
 
 **回头去群里问下好了**
