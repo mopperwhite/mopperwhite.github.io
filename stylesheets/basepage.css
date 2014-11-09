@@ -32,6 +32,13 @@ a:link {color: #FFFF95;text-decoration:none;}
 a:visited {color: #FFFF95;text-decoration:none;}
 a:hover {color: #FFFFBF;text-decoration:none;}
 a:active {color: #E4FF95;text-decoration:none;}
+.light-space{
+        color: #1E1E1E;
+}
+.light-space a:link{ color: #000035;text-decoration:none;}
+.light-space a:visited{ color: #000035;text-decoration:none;}
+.light-space a:hover{ color: #004080;text-decoration:none;}
+.light-space a:active{ color: #004080;text-decoration:none;}
 p{font-size:15px}
 h1{font-size:40px}
 h2{font-size:35px}
@@ -93,8 +100,9 @@ div#header .blog-title{
         font-size: 100px;
 }
 
+
 div.empty-block{
-        min-height: 10px;
+        min-height: 20px;
         width: 100%;
 }
 

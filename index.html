@@ -4,11 +4,13 @@ title: MopperWhite
 include: 
         -post_item.html
 ---
+<div class="empty-block"></div>
 <h1>博客开张</h2>
 <div class="in-frame">
         <p>先用来做笔记试试好了。</p>
 </div>
 <span/>
+<div class="empty-block"></div>
 <h1>全部文章</h2>
 {% for post in site.posts %}
         <div class="post-item">
@@ -26,8 +28,8 @@ include:
                                         </div>
                                 </div>
                         </p>
-                        <div>
-                                {{ include.page.excerpt }}
+                        <div class="light-space">
+                                {{ post.content }}
                         </div>
                 </div>
         </div>
