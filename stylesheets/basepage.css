@@ -93,4 +93,8 @@ div#header .blog-title{
         font-size: 100px;
 }
 
+div.empty-block{
+        min-height: 10px;
+        width: 100%;
+}
 
