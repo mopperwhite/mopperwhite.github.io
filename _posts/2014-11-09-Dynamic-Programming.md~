@@ -32,7 +32,7 @@ f(i,j,k) 的值存在 a\[i\]\[j\]\[k\]里
 
 最大上升子序列长度
 
-{% highlight Cpp %}
+```C++
     #include <iostream>
     using namespace std;
     int num[100]={0};
@@ -58,7 +58,7 @@ f(i,j,k) 的值存在 a\[i\]\[j\]\[k\]里
         cout << nMax;
         return 0;
     }
-{% endhighlight %}
+```
 
 
 
@@ -95,3 +95,9 @@ longlong都不够用
 ```
 
 **回头去群里问下好了**
+
+备忘：代码高亮出不来
+----------
+不管是\`\`\`
+
+还是\{\% highlisht \%\} 都不行

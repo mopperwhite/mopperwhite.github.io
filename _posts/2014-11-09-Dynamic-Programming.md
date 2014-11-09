@@ -5,6 +5,7 @@ tags:
     - Dynamic Programming
     - Algorithm
     - Note
+    - BUG待修
     
 ---
 动态规划 攻略开始
@@ -95,3 +96,9 @@ longlong都不够用
 ```
 
 **回头去群里问下好了**
+
+备忘：代码高亮出不来
+----------
+不管是\`\`\`
+
+还是\{\% highlisht \%\} 都不行

@@ -33,8 +33,12 @@ a:visited {color: #FFFF95;text-decoration:none;}
 a:hover {color: #FFFFBF;text-decoration:none;}
 a:active {color: #E4FF95;text-decoration:none;}
 p{font-size:15px}
-h1{font-size:30px}
-h1{font-size:30px}
+h1{font-size:40px}
+h2{font-size:35px}
+h3{font-size:30px}
+h4{font-size:25px}
+h5{font-size:20px}
+h6{font-size:15px}
 
 div.content-background{
         position: static;
