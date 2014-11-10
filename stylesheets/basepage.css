@@ -106,3 +106,10 @@ div.empty-block{
         width: 100%;
 }
 
+div.disque_comment_space{
+        width : 95%;
+        background-color: #DCDCDC;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+}
